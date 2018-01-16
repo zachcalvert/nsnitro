@@ -1,5 +1,5 @@
 # encoding: utf-8
-from nsbaseresource import NSBaseResource
+from .nsbaseresource import NSBaseResource
 
 
 class NSServiceGroupMemberStat(NSBaseResource):

@@ -1,6 +1,6 @@
 # encoding: utf-8
-from nsbaseresource import NSBaseResource
-from nsservice import NSService
+from .nsbaseresource import NSBaseResource
+from .nsservice import NSService
 
 class NSGSLBService(NSBaseResource):
 

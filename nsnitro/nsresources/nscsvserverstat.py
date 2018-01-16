@@ -1,9 +1,9 @@
 # encoding: utf-8
-from nsbaseresource import NSBaseResource
+from .nsbaseresource import NSBaseResource
 
 
 class NSCSVServerStat(NSBaseResource):
-    
+
     def __init__(self, json_data=None):
         super(NSCSVServerStat, self).__init__()
         self.options = {
@@ -50,13 +50,13 @@ class NSCSVServerStat(NSBaseResource):
         self.resourcetype = NSCSVServerStat.get_resourcetype()
         if not (json_data is None):
             for key in json_data.keys():
-		if self.options.has_key(key):
-		    self.options[key] = json_data[key]
+                if self.options.has_key(key):
+                    self.options[key] = json_data[key]
 
 
     @staticmethod
     def get_resourcetype():
-	return 'csvserver'
+        return 'csvserver'
 
     def set_name(self, name):
         self.options['name'] = name

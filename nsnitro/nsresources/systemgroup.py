@@ -1,4 +1,4 @@
-from nsbaseresource import NSBaseResource
+from .nsbaseresource import NSBaseResource
 
 __author__ = 'md2k@md2k.net'
 

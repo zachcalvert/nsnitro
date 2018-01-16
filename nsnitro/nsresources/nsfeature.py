@@ -1,6 +1,6 @@
 __author__ = 'vllazarenko'
 
-from nsbaseresource import NSBaseResource
+from .nsbaseresource import NSBaseResource
 
 
 class NSFeature(NSBaseResource):
