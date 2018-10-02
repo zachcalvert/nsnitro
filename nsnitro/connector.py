@@ -69,7 +69,7 @@ class NSNitro:
 
     def post(self, payload):
         try:
-            payload_encoded = urllib.parse.urlencode(payload)
+            payload_encoded = urllib.parse.urlencode(payload).encode("utf-8")
             req = urllib.request.Request(
                 self.get_url(), payload_encoded, self.__postheaders)
             response = urllib.request.urlopen(req)
